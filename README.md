@@ -28,7 +28,7 @@ Author: Chang Qiao<sup>1,#</sup>, Xingye Chen<sup>1,#</sup>, Siwei Zhang<sup>2,#
 
 ## File structure
 - `./dataset` is the default path for training data and testing data
-    - `./dataset/train` The augmented training image patch pairs will be saved here by default
+    - `./dataset/train` The augmented training image patch pairs should be saved here by default
     - `./dataset/test` includes some demo images of F-actin and microtubules to test caGAN-SIM models
 - `./src` includes the source codes of caGAN-SIM
 	- `./src/models` includes declaration of caGAN models
