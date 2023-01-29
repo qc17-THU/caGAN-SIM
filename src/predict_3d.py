@@ -43,7 +43,10 @@ tf.compat.v1.Session(config=tf.compat.v1.ConfigProto(gpu_options=gpu_options))
 # --------------------------------------------------------------------------------
 img_path = glob.glob(test_images_path + '/*.tif')
 img_path.sort()
-n_channel = ndirs * nphases
+if nphases == 1:
+    n_channel = ndirs + 1
+else:
+    n_channel = ndirs * nphases
 img = tiff.imread(img_path[0])
 shape = img.shape
 input_y, input_x = shape[1], shape[2]
